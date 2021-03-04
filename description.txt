@@ -1,0 +1,41 @@
+This is a blog project.
+It has 2 application (blog and users)
+
+fonctionnality :
+
+
+Blog:
+	- models : Post with implementation of get_absolute_url
+	- admin : basic 
+	- tests : no tests
+	- urls : 
+		* about
+		* post list
+		* post detail
+		* post creation
+		* post editing
+		* post deletion
+		* user post list
+	- views : 
+		* PostListView : using generic ListView with ordering and pagination.
+		* PostDetailView : using generic DetailView
+		* PostCreateView : using generic CreateView with form_valid overriding
+		* PostUpdateView : using generic UpdateView with form_valid overriding, LoginRequiredMixin and UserPassesTestMixin
+		* PostDeleteView : using generic DeleteView with LoginRequiredMixin and UserPassesTestMixin
+		* UserPostListView : using generic ListView with overriding get_queryset
+
+users:
+	- models : Profile with overriding of save()
+	- admin : basic 
+	- forms : UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+	- tests : no tests
+	- urls : no urls
+	- signals : 2 post_save User signals
+
+
+default :
+	- User registation, login, logout, password reset with django auth app
+
+css-framework : Bootstrap4
+
+third-party packages : crispy, Pillow
