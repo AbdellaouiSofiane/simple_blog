@@ -14,3 +14,7 @@
 
 # edit/delete own posts
 ![image](https://user-images.githubusercontent.com/62038668/110031923-d2e79e00-7d37-11eb-8aae-a46dc548cdc4.png)
+
+# edit profil
+![image](https://user-images.githubusercontent.com/62038668/110032035-f7437a80-7d37-11eb-9d5a-3f496b6142a1.png)
+
